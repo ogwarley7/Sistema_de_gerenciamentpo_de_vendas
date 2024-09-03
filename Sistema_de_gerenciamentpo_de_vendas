@@ -1,0 +1,37 @@
+ Sistema de Vendas
+
+Objetivo: Desenvolver um sistema de gerenciamento de vendas para um pequeno comércio. O sistema deve permitir o registro de clientes, produtos e vendas, e possibilitar consultas e atualizações básicas.
+
+Descrição do Banco de Dados:
+
+Clientes
+
+id_cliente: Identificador único do cliente (inteiro, auto-incremento).
+nome: Nome completo do cliente (string, até 100 caracteres).
+email: Endereço de e-mail do cliente (string, até 100 caracteres, único).
+telefone: Número de telefone do cliente (string, até 15 caracteres).
+Produtos
+
+id_produto: Identificador único do produto (inteiro, auto-incremento).
+nome: Nome do produto (string, até 100 caracteres).
+preco: Preço do produto (decimal com duas casas decimais).
+quantidade_estoque: Quantidade disponível em estoque (inteiro).
+Vendas
+
+id_venda: Identificador único da venda (inteiro, auto-incremento).
+id_cliente: Identificador do cliente que realizou a compra (inteiro, chave estrangeira referenciando Clientes).
+id_produto: Identificador do produto vendido (inteiro, chave estrangeira referenciando Produtos).
+quantidade_vendida: Quantidade do produto vendido (inteiro).
+data_venda: Data da venda (data).
+Operações Suportadas:
+
+Inserir novos clientes, produtos e vendas.
+Consultar todas as vendas, mostrando informações detalhadas sobre clientes e produtos.
+Consultar compras realizadas por um cliente específico.
+Exibir o total de vendas realizadas por produto.
+Atualizar informações de clientes e produtos.
+Deletar vendas, clientes e produtos (com cuidado para manter a integridade referencial).
+Desafios:
+
+Manter a integridade dos dados ao atualizar e deletar registros.
+Garantir que as consultas forneçam informações claras e precisas.
