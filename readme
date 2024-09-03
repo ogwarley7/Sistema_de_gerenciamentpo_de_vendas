@@ -1,0 +1,62 @@
+# Sistema de Vendas
+
+Este projeto consiste na implementação de um banco de dados para gerenciar um sistema de vendas. O banco de dados inclui tabelas para clientes, produtos e vendas, e suporta operações básicas como inserção, atualização, exclusão e consulta de dados.
+
+## Estrutura do Banco de Dados
+
+O banco de dados `sistema_vendas` possui as seguintes tabelas:
+
+1. **Clientes**
+   - `id_cliente`: Identificador único do cliente (chave primária).
+   - `nome`: Nome do cliente.
+   - `email`: E-mail do cliente (único).
+   - `telefone`: Telefone do cliente.
+
+2. **Produtos**
+   - `id_produto`: Identificador único do produto (chave primária).
+   - `nome`: Nome do produto.
+   - `preco`: Preço do produto.
+   - `quantidade_estoque`: Quantidade disponível em estoque.
+
+3. **Vendas**
+   - `id_venda`: Identificador único da venda (chave primária).
+   - `id_cliente`: Referência ao cliente que realizou a compra.
+   - `id_produto`: Referência ao produto vendido.
+   - `quantidade_vendida`: Quantidade do produto vendido.
+   - `data_venda`: Data da venda.
+
+## Operações Suportadas
+
+- **Inserir Dados:** Adicione novos clientes, produtos e vendas.
+- **Consultar Dados:**
+  - Visualize todas as vendas com detalhes dos clientes e produtos.
+  - Verifique as compras realizadas por um cliente específico.
+  - Exiba o total de vendas por produto.
+- **Atualizar Dados:** Modifique informações de clientes e produtos.
+- **Deletar Dados:** Remova vendas, clientes e produtos conforme necessário.
+
+## Como Usar
+
+1. **Criação do Banco de Dados:**
+   Execute o script SQL fornecido para criar o banco de dados e as tabelas necessárias.
+
+2. **Inserção de Dados:**
+   Utilize os comandos `INSERT` para adicionar registros às tabelas.
+
+3. **Consultas:**
+   Utilize os comandos `SELECT` para consultar dados conforme necessário.
+
+4. **Atualização e Deleção:**
+   Use os comandos `UPDATE` e `DELETE` para modificar ou remover registros.
+
+## Requisitos
+
+- MySQL ou qualquer outro SGBD compatível com SQL.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias ou correções para este projeto. Para contribuir, faça um fork deste repositório, faça suas alterações e envie um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
